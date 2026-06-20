@@ -1,219 +1,598 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>A Nikhil Kumar | Cybersecurity Engineer</title>
+
+<meta name="title" content="A Nikhil Kumar | Cybersecurity Engineer">
+<meta name="description"
+content="Cybersecurity Engineer specializing in Application Security, Cloud Security, Security Operations, DevSecOps, Vulnerability Management, Threat Detection and Security Research.">
+
+<meta name="keywords"
+content="Cybersecurity Engineer, Application Security, Cloud Security, DevSecOps, Security Operations, Splunk, Wazuh, AWS, Docker, Kubernetes, Penetration Testing">
+
+<meta name="author" content="A Nikhil Kumar">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
-html{scroll-behavior:smooth}
-body{background:#0d1117;color:#e6edf3;line-height:1.7}
-nav{position:fixed;top:0;width:100%;background:rgba(13,17,23,.9);backdrop-filter:blur(10px);z-index:1000}
-.nav-container{max-width:1200px;margin:auto;padding:18px 20px;display:flex;justify-content:space-between}
-nav a{color:#c9d1d9;text-decoration:none;margin-left:20px}
-.container{max-width:1200px;margin:auto;padding:0 20px}
-.hero{min-height:100vh;display:flex;align-items:center;text-align:center;background:linear-gradient(rgba(13,17,23,.85),rgba(13,17,23,.95)),url('https://images.unsplash.com/photo-1510511459019-5dda7724fd87?auto=format&fit=crop&w=1600&q=80');background-size:cover}
-.hero-content{max-width:900px;margin:auto}
-.hero h1{font-size:4rem;color:#58a6ff}
-.hero h2{font-size:1.5rem;margin:10px 0}
-.hero p{max-width:750px;margin:20px auto;color:#c9d1d9}
-.btn{display:inline-block;padding:12px 24px;background:#238636;color:#fff;text-decoration:none;border-radius:10px;margin:8px}
-section{padding:90px 0}
-.section-title{text-align:center;font-size:2.2rem;color:#58a6ff;margin-bottom:40px}
-.grid{display:grid;gap:24px}
-.two{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
-.card{background:#161b22;border:1px solid #30363d;border-radius:16px;padding:25px}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px}
-.stat{text-align:center;background:#161b22;padding:25px;border-radius:16px}
-.stat h3{color:#58a6ff;font-size:2rem}
-.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
-.skill{background:#161b22;padding:22px;border-radius:16px}
-.timeline .item{background:#161b22;border-left:4px solid #58a6ff;padding:25px;margin-bottom:20px;border-radius:10px}
-.project{background:#161b22;padding:25px;border-radius:16px}
-.hof a,.contact a{color:#58a6ff;text-decoration:none}
-footer{background:#161b22;padding:30px;text-align:center}
-ul{padding-left:20px}
-li{margin:8px 0}
-@media(max-width:768px){.hero h1{font-size:2.6rem}}
-</style>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-<nav>
-<div class="nav-container">
-<strong>A Nikhil Kumar</strong>
-<div>
-<a href="#about">About</a>
-<a href="#experience">Experience</a>
-<a href="#projects">Projects</a>
-<a href="#halloffame">Recognition</a>
-<a href="#contact">Contact</a>
+<!-- ========================= -->
+<!-- Animated Background -->
+<!-- ========================= -->
+
+<canvas id="network-canvas"></canvas>
+
+<!-- ========================= -->
+<!-- Navigation -->
+<!-- ========================= -->
+
+<nav id="navbar">
+
+<div class="container nav-container">
+
+<div class="logo">
+NK
 </div>
+
+<ul class="nav-links">
+
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#recognition">Recognition</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<div class="mobile-menu">
+☰
 </div>
+
+</div>
+
 </nav>
 
-<section class="hero">
-<div class="hero-content">
-<h1>A Nikhil Kumar</h1>
-<h2>Cybersecurity Engineer</h2>
-<p>Cybersecurity Engineer specializing in Application Security, Cloud Security, DevSecOps, Vulnerability Management, Secure CI/CD Pipelines, and Security Research.</p>
-<a class="btn" href="https://linkedin.com/in/nikhil-kumar-a-7a3127232">LinkedIn</a>
-<a class="btn" href="https://github.com/spiritboy47">GitHub</a>
-<a class="btn" href="https://tryhackme.com/p/spiritboy">TryHackMe</a>
+<!-- ========================= -->
+<!-- Hero Section -->
+<!-- ========================= -->
+
+<header class="hero">
+
+<div class="container hero-content">
+
+<span class="hero-badge">
+Cybersecurity Engineer
+</span>
+
+<h1>
+A Nikhil Kumar
+</h1>
+
+<h2>
+Application Security • Cloud Security • Security Operations • DevSecOps
+</h2>
+
+<p>
+
+Cybersecurity Engineer with hands-on experience in Application Security,
+Cloud Security, Security Operations, Vulnerability Management,
+Threat Detection, DevSecOps, and Security Research.
+
+Passionate about securing modern applications, cloud infrastructure,
+and enterprise environments through offensive and defensive security practices.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#contact" class="btn btn-primary">
+Contact Me
+</a>
+
+<!--<a href="#" class="btn btn-secondary"> Download Resume </a> -->
+
 </div>
+
+<div class="hero-links">
+
+<a href="https://linkedin.com/in/nikhil-kumar-a-7a3127232" target="_blank">
+LinkedIn
+</a>
+
+<a href="https://github.com/spiritboy47" target="_blank">
+GitHub
+</a>
+
+<a href="https://tryhackme.com/p/spiritboy" target="_blank">
+TryHackMe
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- ========================= -->
+<!-- Metrics -->
+<!-- ========================= -->
+
+<section class="metrics">
+
+<div class="container">
+
+<div class="metric-card">
+
+<h3 class="counter" data-target="50">
+0
+</h3>
+
+<p>Vulnerabilities Reported</p>
+
+</div>
+
+<div class="metric-card">
+
+<h3 class="counter" data-target="10">
+0
+</h3>
+
+<p>Hall of Fame Recognitions</p>
+
+</div>
+
+<div class="metric-card">
+
+<h3>
+Top 1%
+</h3>
+
+<p>TryHackMe Ranking</p>
+
+</div>
+
+<div class="metric-card">
+
+<h3>
+CEH
+</h3>
+
+<p>Certified Ethical Hacker</p>
+
+</div>
+
+</div>
+
 </section>
+
+<!-- ========================= -->
+<!-- About -->
+<!-- ========================= -->
 
 <section id="about">
+
 <div class="container">
-<h2 class="section-title">About Me</h2>
-<div class="grid two">
-<div class="card">
-<h3>Professional Summary</h3>
-<p>Cybersecurity Engineer and DevSecOps professional with hands-on experience in VAPT, Application Security, Cloud Security, AWS, Kubernetes, Docker, and CI/CD Security. Passionate about identifying vulnerabilities, automating security controls, and building resilient systems.</p>
+
+<div class="section-header">
+
+<h2>About Me</h2>
+
+<p>
+Cybersecurity Professional focused on securing applications,
+infrastructure, and cloud-native environments.
+</p>
+
 </div>
-<div class="card">
-<h3>Education</h3>
-<p><strong>Bachelor of Technology in Cybersecurity</strong></p>
-<p>Swami Vivekananda Institute of Technology</p>
-<p>2020 - 2024</p>
+
+<div class="glass-card">
+
+<p>
+
+I am a Cybersecurity Engineer with experience spanning Application Security,
+Cloud Security, Security Operations, DevSecOps, Infrastructure Security,
+and Vulnerability Management.
+
+My professional experience includes conducting security assessments
+across web applications, APIs, mobile applications, network environments,
+and cloud infrastructure while integrating security throughout the software
+development lifecycle.
+
+</p>
+
+<p>
+
+I have worked extensively with AWS, Kubernetes, Docker,
+CI/CD pipelines, monitoring solutions, SIEM technologies,
+and security automation tools to strengthen organizational
+security posture and improve operational resilience.
+
+</p>
+
+<p>
+
+Alongside offensive security testing, I actively continue
+developing expertise in Security Operations through hands-on
+experience with Splunk, Wazuh, Threat Detection,
+Incident Response, Threat Hunting, and Security Monitoring.
+
+</p>
+
 </div>
+
 </div>
-</div>
+
 </section>
 
-<section>
+<!-- ========================= -->
+<!-- Skills -->
+<!-- ========================= -->
+
+<section id="skills">
+
 <div class="container">
-<h2 class="section-title">Security Metrics</h2>
-<div class="stats">
-<div class="stat"><h3>50+</h3><p>Vulnerabilities Reported</p></div>
-<div class="stat"><h3>13+</h3><p>Hall of Fame Recognitions</p></div>
-<div class="stat"><h3>Top 1%</h3><p>TryHackMe Ranking</p></div>
-<div class="stat"><h3>CEH</h3><p>Certified Ethical Hacker</p></div>
-<div class="stat"><h3>99.9%</h3><p>Infrastructure Uptime</p></div>
-<div class="stat"><h3>40%</h3><p>Deployment Improvement</p></div>
+
+<div class="section-header">
+<h2>Technical Expertise</h2>
 </div>
+
+<div class="skills-grid">
+
+<div class="skill-card">
+<h3>Application Security</h3>
+<ul>
+<li>Web Security</li>
+<li>API Security</li>
+<li>Mobile Security</li>
+<li>OWASP Top 10</li>
+<li>Secure Code Review</li>
+</ul>
 </div>
+
+<div class="skill-card">
+<h3>Penetration Testing</h3>
+<ul>
+<li>Web Pentesting</li>
+<li>API Pentesting</li>
+<li>Mobile Pentesting</li>
+<li>Network Pentesting</li>
+<li>Infrastructure Testing</li>
+</ul>
+</div>
+
+<div class="skill-card">
+<h3>Security Operations</h3>
+<ul>
+<li>Threat Hunting</li>
+<li>Incident Response</li>
+<li>Alert Triage</li>
+<li>Detection Engineering</li>
+<li>Log Analysis</li>
+</ul>
+</div>
+
+<div class="skill-card">
+<h3>SIEM & Monitoring</h3>
+<ul>
+<li>Splunk</li>
+<li>Wazuh</li>
+<li>ELK Stack</li>
+<li>Grafana</li>
+<li>Loki</li>
+</ul>
+</div>
+
+<div class="skill-card">
+<h3>Cloud Security</h3>
+<ul>
+<li>AWS Security</li>
+<li>IAM</li>
+<li>VPC Security</li>
+<li>CloudTrail</li>
+<li>Hardening</li>
+</ul>
+</div>
+
+<div class="skill-card">
+<h3>DevSecOps</h3>
+<ul>
+<li>Docker</li>
+<li>Kubernetes</li>
+<li>Jenkins</li>
+<li>SonarQube</li>
+<li>Trivy</li>
+</ul>
+</div>
+
+<div class="skill-card">
+<h3>Security Tools</h3>
+<ul>
+<li>Burp Suite</li>
+<li>Nmap</li>
+<li>Metasploit</li>
+<li>Nessus</li>
+<li>Wireshark</li>
+</ul>
+</div>
+
+<div class="skill-card">
+<h3>Programming</h3>
+<ul>
+<li>Python</li>
+<li>Bash</li>
+<li>PowerShell</li>
+<li>FastAPI</li>
+<li>Automation</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
 </section>
 
-<section>
-<div class="container">
-<h2 class="section-title">Technical Expertise</h2>
-<div class="skills">
-<div class="skill"><h3>Application Security</h3><p>Web, API, Mobile Security, OWASP Top 10, VAPT</p></div>
-<div class="skill"><h3>Cloud & DevSecOps</h3><p>AWS, Docker, Kubernetes, Jenkins, Terraform</p></div>
-<div class="skill"><h3>Security Engineering</h3><p>IAM, Hardening, Vulnerability Management, CI/CD Security</p></div>
-<div class="skill"><h3>Monitoring & SIEM</h3><p>Prometheus, Grafana, Loki, ELK, Wazuh</p></div>
-</div>
-</div>
-</section>
+<!-- ========================= -->
+<!-- Experience -->
+<!-- ========================= -->
 
 <section id="experience">
+
 <div class="container">
-<h2 class="section-title">Professional Experience</h2>
+
+<div class="section-header">
+<h2>Professional Experience</h2>
+</div>
+
 <div class="timeline">
-<div class="item">
-<h3>DevSecOps Engineer — Acintyo Tech</h3>
+
+<!-- DevSecOps Engineer -->
+<div class="timeline-item">
+
+<h3>DevSecOps Engineer</h3>
+
+<span>Acintyo Tech Pvt Ltd | Jan 2025 – Present</span>
+
 <ul>
-<li>Conducted penetration testing across web, mobile, API and cloud environments.</li>
+
+<li>Conducted security assessments across web, API, mobile and cloud environments.</li>
+
 <li>Integrated SonarQube and Trivy into CI/CD pipelines.</li>
-<li>Designed CI/CD pipelines for Java, Node.js and FastAPI applications.</li>
-<li>Built and maintained secure AWS infrastructure with 99.9% uptime.</li>
-<li>Implemented IAM policies, secrets management and hardening.</li>
-<li>Deployed Prometheus, Grafana and Loki monitoring stack.</li>
+
+<li>Built secure AWS infrastructure with security best practices.</li>
+
+<li>Implemented IAM controls and infrastructure hardening.</li>
+
+<li>Managed monitoring solutions using Prometheus, Grafana, Loki and Wazuh.</li>
+
+<li>Automated operational and security workflows using Python and Bash.</li>
+
+<li>Performed vulnerability management and remediation validation.</li>
+
+<li>Collaborated with development teams on secure coding practices.</li>
+
 </ul>
+
 </div>
-<div class="item">
-<h3>Cybersecurity Intern — Acintyo Tech</h3>
+
+<!-- Cybersecurity Intern -->
+
+<div class="timeline-item">
+
+<h3>Cybersecurity Intern</h3>
+
+<span>Acintyo Tech Pvt Ltd | Jul 2024 – Dec 2024</span>
+
 <ul>
-<li>Performed VAPT on 15+ applications.</li>
-<li>Identified and validated 30+ vulnerabilities.</li>
-<li>Supported AWS security and DevSecOps initiatives.</li>
+
+<li>Performed VAPT across web applications, APIs and mobile applications.</li>
+
+<li>Identified and validated critical security vulnerabilities.</li>
+
+<li>Conducted cloud security reviews and posture assessments.</li>
+
+<li>Assisted in DevSecOps implementation initiatives.</li>
+
 </ul>
+
 </div>
-<div class="item">
-<h3>Security Research Intern — ER Segment</h3>
-<ul>
-<li>Assessed 20+ web applications and APIs.</li>
-<li>Reported 70+ vulnerabilities.</li>
-<li>Performed OWASP Top 10 assessments.</li>
-</ul>
+
 </div>
+
 </div>
-</div>
+
 </section>
+
+<!-- ========================= -->
+<!-- Projects -->
+<!-- ========================= -->
 
 <section id="projects">
+
 <div class="container">
-<h2 class="section-title">Featured Projects</h2>
-<div class="grid two">
-<div class="project">
+
+<div class="section-header">
+<h2>Featured Projects</h2>
+</div>
+
+<div class="projects-grid">
+
+<div class="project-card">
+
 <h3>Log Error Monitor</h3>
-<ul>
-<li>Built with FastAPI and Docker.</li>
-<li>Real-time log monitoring and anomaly detection.</li>
-<li>Automated email alerts.</li>
-</ul>
+
+<p>
+
+FastAPI-based monitoring platform capable of detecting
+application errors, generating alerts, and improving
+operational visibility.
+
+</p>
+
 </div>
-<div class="project">
+
+<div class="project-card">
+
 <h3>VoiceOps AI</h3>
-<ul>
-<li>AI-powered SRE dashboard.</li>
-<li>Integrated Prometheus monitoring.</li>
-<li>Voice and text command support.</li>
-</ul>
+
+<p>
+
+Voice-enabled SRE and monitoring dashboard integrated
+with observability tools to improve operational efficiency.
+
+</p>
+
 </div>
+
 </div>
+
 </div>
+
 </section>
 
-<section id="halloffame">
+<!-- ========================= -->
+<!-- Recognition -->
+<!-- ========================= -->
+
+<section id="recognition">
+
 <div class="container">
-<h2 class="section-title">Security Research Recognition</h2>
-<div class="card hof">
-<p>Recognized by global organizations for responsible vulnerability disclosure:</p>
-<ul>
-<li><a href="https://www.philips.com/a-w/security/coordinated-vulnerability-disclosure/hall-of-honors.html#slide_#:~:text=Nikhil%20Kumar" 
-      target="_blank" rel="noopener noreferrer">Philips</a></li>
-<li><a href="https://www.basf.com/global/en/legal/responsible-disclosure-statement#item-1706692396480-1932182967:~:text=Nikhil%20Kumar%20A%2FSpiritBoy" target="_blank"
-     rel="noopener noreferrer">BASF</a></li>
-<li><a href="https://www.unesco.org/en/vulnerability-disclosure#:~:text=Nikhil%20Kumar" target="_blank"
-     rel="noopener noreferrer">UNESCO</a></li>
-<li><a href="https://www.berlin.de/wir-ueber-uns/7470384-4219174-danksagungen.html#:~:text=Nikhil%20Kumar" target="_blank"
-     rel="noopener noreferrer">Berlin.de</a></li>
-<li><a href="https://www.deltion.nl/coordinated-vulnerability-disclosure-in-english#:~:text=Nikhil%20Kumar" target="_blank"
-     rel="noopener noreferrer">Deltion</a></li>
-<li><a href="https://www.cin7.com/legal/responsible-disclosure-statement/#:~:text=Nikhil%20Kumar" target="_blank"
-     rel="noopener noreferrer">Cin7</a></li>
-<li><a href="https://www.mobilityplus.be/en/wall-of-fame#:~:text=Nikhil%20Kumar" target="_blank"
-     rel="noopener noreferrer">MobilityPlus</a></li>
-<li><a href="https://www.act.gov.au/directorates-and-agencies/digital-canberra/digital-data-and-technology-solutions/report-a-system-security-vulnerability#People-who-have-disclosed-vulnerabilities#:~:text=Nikhil%20Kumar" 
-      target="_blank" rel="noopener noreferrer">ACT Government</a></li>
-<li><a href="https://www.ru.nl/en/about-us/policies-and-regulations/privacy-and-security/report-vulnerability#halloffame:~:text=Nikhil%20Kumar"
-      target="_blank" rel="noopener noreferrer">Radboud University</a></li>
-<li><a href="https://www.uni-muenster.de/CERT/en/incidents/acknowledgments.html#:~:text=Nikhil%20Kumar"
-      target="_blank" rel="noopener noreferrer">University of Münster</a></li>
-<li><a href="https://www.apra.gov.au/security" target="_blank" rel="noopener noreferrer">APRA</a></li>
-<li><a href="https://sensfrx.ai/bug-bounty/hall-of-fame" target="_blank" rel="noopener noreferrer">Sensfrx</a></li>
-</ul>
+
+<div class="section-header">
+<h2>Security Research Recognition</h2>
 </div>
+
+<div class="recognition-grid">
+
+<div class="recognition-card"> <a href="https://www.philips.com/a-w/security/coordinated-vulnerability-disclosure/hall-of-honors.html#slide_#:~:text=Nikhil%20Kumar" 
+      target="_blank" rel="noopener noreferrer">Philips</a></div>
+<div class="recognition-card"> <a href="https://www.basf.com/global/en/legal/responsible-disclosure-statement#item-1706692396480-1932182967:~:text=Nikhil%20Kumar%20A%2FSpiritBoy" target="_blank"
+     rel="noopener noreferrer">BASF</a></div>
+<div class="recognition-card"><a href="https://www.unesco.org/en/vulnerability-disclosure#:~:text=Nikhil%20Kumar" target="_blank"
+     rel="noopener noreferrer">UNESCO</a></div>
+<div class="recognition-card"><a href="https://www.berlin.de/wir-ueber-uns/7470384-4219174-danksagungen.html#:~:text=Nikhil%20Kumar" target="_blank"
+     rel="noopener noreferrer">Berlin.de</a></div>
+<div class="recognition-card"><a href="https://www.cin7.com/legal/responsible-disclosure-statement/#:~:text=Nikhil%20Kumar" target="_blank"
+     rel="noopener noreferrer">Cin7</a></div>
+<div class="recognition-card"><a href="https://www.deltion.nl/coordinated-vulnerability-disclosure-in-english#:~:text=Nikhil%20Kumar" target="_blank"
+     rel="noopener noreferrer">Deltion</a></div>
+<div class="recognition-card"><a href="https://www.mobilityplus.be/en/wall-of-fame#:~:text=Nikhil%20Kumar" target="_blank"
+     rel="noopener noreferrer">MobilityPlus</a></div>
+<div class="recognition-card"><a href="https://www.act.gov.au/directorates-and-agencies/digital-canberra/digital-data-and-technology-solutions/report-a-system-security-vulnerability#People-who-have-disclosed-vulnerabilities#:~:text=Nikhil%20Kumar" 
+      target="_blank" rel="noopener noreferrer">ACT Government AU</a></div>
+<div class="recognition-card"><a href="https://www.ru.nl/en/about-us/policies-and-regulations/privacy-and-security/report-vulnerability#halloffame:~:text=Nikhil%20Kumar"
+      target="_blank" rel="noopener noreferrer">Radboud University</a></div>
+<div class="recognition-card"><a href="https://www.uni-muenster.de/CERT/en/incidents/acknowledgments.html#:~:text=Nikhil%20Kumar"
+      target="_blank" rel="noopener noreferrer">University of Münster</a></div>
+
 </div>
+
+</div>
+
 </section>
+
+<!-- ========================= -->
+<!-- Education -->
+<!-- ========================= -->
+
+<section id="education">
+
+<div class="container">
+
+<div class="section-header">
+<h2>Education</h2>
+</div>
+
+<div class="glass-card">
+
+<h3>
+Bachelor of Technology in Cybersecurity
+</h3>
+
+<p>
+Swami Vivekananda Institute of Technology
+</p>
+
+<p>
+2020 – 2024
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- Contact -->
+<!-- ========================= -->
 
 <section id="contact">
+
 <div class="container">
-<h2 class="section-title">Contact</h2>
-<div class="card contact">
+
+<div class="section-header">
+<h2>Contact</h2>
+</div>
+
+<div class="glass-card">
+
 <p>Email: ank897722@gmail.com</p>
+
 <p>Location: Hyderabad, India</p>
-<p><a href="https://linkedin.com/in/nikhil-kumar-a-7a3127232">LinkedIn</a> | <a href="https://github.com/spiritboy47">GitHub</a> | <a href="https://tryhackme.com/p/spiritboy">TryHackMe</a></p>
+
+<p>
+
+<a href="https://linkedin.com/in/nikhil-kumar-a-7a3127232">
+LinkedIn
+</a>
+
+|
+
+<a href="https://github.com/spiritboy47">
+GitHub
+</a>
+
+|
+
+<a href="https://tryhackme.com/p/spiritboy">
+TryHackMe
+</a>
+
+</p>
+
 </div>
+
 </div>
+
 </section>
 
 <footer>
-<p>© 2026 Nikhil Kumar | Cybersecurity Engineer</p>
+
+<div class="container">
+
+<p>
+© 2026 A Nikhil Kumar | Cybersecurity Engineer
+</p>
+
+</div>
+
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
